@@ -25,7 +25,7 @@ class Square(Shape):
     def area(self):
         return self.__width * self.__height
         
-circle = Circle(10)
+circle = Circle(20)
 circle.main_display()
 square = Square(10, 10)
 square.main_display()
