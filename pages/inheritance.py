@@ -13,7 +13,7 @@ class Circle(Shape):
         self.__PI = 3.14
         self.__radius = 반지름
     def sub_display(self):
-        print(f"원의 반지름은: {self.__radius}")
+        return print(f"원의 반지름은: {self.__radius}")
     def area(self): 
         return self.__PI * self.__radius**2
 class Square(Shape):
