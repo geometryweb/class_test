@@ -5,10 +5,12 @@ sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 import streamlit as st
 from school import student
 
-수학 = student.Student(80)
+sooni = student.Student(80,70,60,80,70)
 
-st.write("테스트")
-st.write(수학.test_sum())
+
+st.write("class test")
+st.write(f"총점: {sooni.student_sum()}/평균: {sooni.student_average():.1f}")
+# print(sooni.student_sum(), sooni.student_average())
 
 
 
