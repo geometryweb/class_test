@@ -21,7 +21,7 @@ class Square(Shape):
         self.__width = 가로
         self.__height = 세로
     def sub_display(self):
-        print(f"사각형의 가로: {self.__width} 사각형의 세로: {self.__height}")
+        st.write(f"사각형의 가로: {self.__width} 사각형의 세로: {self.__height}")
     def area(self):
         return self.__width * self.__height
         
