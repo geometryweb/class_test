@@ -9,6 +9,6 @@ from school import student
 
 st.write("테스트")
 st.write(수학.test_sum())
-print(수학.test_sum())
+
 
 
