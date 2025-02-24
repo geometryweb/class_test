@@ -13,7 +13,8 @@ class Circle(Shape):
         self.__PI = 3.14
         self.__radius = 반지름
     def sub_display(self):
-        return "원의 반지름은:" + f"{self.__radius}"
+        re = "원의 반지름은:"
+        return f"{re} {self.__radius}"
     def area(self): 
         return self.__PI * self.__radius**2
 class Square(Shape):
@@ -21,12 +22,13 @@ class Square(Shape):
         self.__width = 가로
         self.__height = 세로
     def sub_display(self):
-        st.write(f"사각형의 가로: {self.__width} 사각형의 세로: {self.__height}")
+        return f"사각형 가로 길이: {self.__width} /사각형 세로 길이: {self.__height}"
     def area(self):
         return self.__width * self.__height
     
-st.subheader("클래스01")        
+st.subheader("클래스")        
 circle = Circle(10)
 circle.main_display()
 square = Square(10, 10)
 square.main_display()
+
