@@ -12,4 +12,7 @@ class Student:
     def student_average(self):
         self.__total_number = 5     
         return self.__total/self.__total_number
-    
+    def __eq__(self, other):
+        return self.student_sum() == other.student_sum()
+    def __ne__(self, other):
+        return self.student_sum() != other.student_sum()
