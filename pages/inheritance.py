@@ -24,8 +24,9 @@ class Square(Shape):
         st.write(f"사각형의 가로: {self.__width} 사각형의 세로: {self.__height}")
     def area(self):
         return self.__width * self.__height
-        
-circle = Circle(20)
+    
+st.subheader("클래스01")        
+circle = Circle(10)
 circle.main_display()
 square = Square(10, 10)
 square.main_display()
