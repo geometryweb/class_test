@@ -5,9 +5,9 @@ class Shape:
         pass
 
     def main_display(self):
-        st.write("_"*10)
+        st.divider()
         st.write(self.sub_display())
-        st.write(f"{self.__class__.__name__} 넓이: {self.area()}")
+        st.write(f"{self.__class__.__name__} 넓이: {self.area():.1f}")
 
 class Circle(Shape):
     PI = 3.14
@@ -16,10 +16,10 @@ class Circle(Shape):
         self._radius = radius
 
     def sub_display(self):
-        return f"원의 반지름은: {self._radius}"
+        return f"원의 반지름: {self._radius}"
 
     def area(self):
-        return self.PI * self._radius**2
+        return 2 * self.PI * self._radius
 
 class Square(Shape):
     def __init__(self, width, height):
@@ -32,7 +32,7 @@ class Square(Shape):
     def area(self):
         return self._width * self._height
 
-st.subheader("클래스")        
+st.subheader("Class Inheritance")        
 circle = Circle(10)
 circle.main_display()
 square = Square(10, 10)
